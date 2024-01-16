@@ -32,22 +32,23 @@ resultado_churros = 0
 resultado_tradicional_dourado = 0
 resultado_ninho_com_nutella = 0
 
+novo_total = ''
+
 condicao = True
 while condicao: 
     print('')
-    tipo = input('Digite o tipo de doce: ')
+    tipo = input('- Digite o tipo de doce: ')
     tipo = tipo.lower()
     
-    quantos = input('Digite quantas unidades: ')
+    quantos = input('- Digite quantidade: ')
     print('')
     
     try:
         quantos = int(quantos)
 
     except:
-        print('Ops! As unidades precisam ser números inteiros.')
+        print('Ops! As quantidades precisam ser números inteiros, tente novamente.')
         break
-
 
     limao = float(320)
     ninho_trufado_com_nutella = float(330)
@@ -83,25 +84,25 @@ while condicao:
     if tipo == 'limao':
         print(f'{tipo} R${limao:.2f}')
         resultado_limao = (limao / 100) * quantos
-        print(f'- {quantos} unidade(s) de {tipo}: R${resultado_limao:.2f}')
+        print(f'{quantos} unidade(s) de {tipo}: R${resultado_limao:.2f}')
         quantos_limao = quantos
 
     elif tipo == 'ninho trufado com nutella':
         print(f'{tipo} R${ninho_trufado_com_nutella:.2f}')
         resultado_ninho_trufado_com_nutella = (ninho_trufado_com_nutella / 100) * quantos
-        print(f'- {quantos} unidades de {tipo}: R${resultado_ninho_trufado_com_nutella:.2f}')
+        print(f'{quantos} unidades de {tipo}: R${resultado_ninho_trufado_com_nutella:.2f}')
         quantos_ninho_trufado_com_nutella = quantos
 
     elif tipo == 'geleia de morango':
         print(f'{tipo} R${geleia_de_morango:.2f}')
         resultado_geleia_de_morango = (geleia_de_morango / 100) * quantos
-        print(f'- {quantos} unidades de {tipo}: R${resultado_geleia_de_morango:.2f}')
+        print(f'{quantos} unidades de {tipo}: R${resultado_geleia_de_morango:.2f}')
         quantos_geleia_de_morango = quantos
         
     elif tipo == 'maracuja':
         print(f'{tipo} R${maracuja:.2f}')
         resultado_maracuja = (maracuja / 100) * quantos
-        print(f'- {quantos} unidades de {tipo}: R${resultado_maracuja:.2f}')
+        print(f'{quantos} unidades de {tipo}: R${resultado_maracuja:.2f}')
         quantos_maracuja = quantos
 
     elif tipo == 'pistache':
@@ -265,13 +266,17 @@ while condicao:
     
 
     else:
-        print('Doce não encontrado, tente novamente.')
+        print(f' {tipo} não encontrado, tente novamente.')
+
+    
 
     print('')
     if quantos >= 0:
+        
         valor_total = resultado_limao + resultado_ninho_trufado_com_nutella + resultado_geleia_de_morango + resultado_maracuja + resultado_pistache + resultado_physalis + resultado_brigadeiro_gourmet + resultado_caramelo_salgado + resultado_surpresa_de_uva + resultado_cereja + resultado_camafeu_de_nozes + resultado_creme_brulee_com_nozes + resultado_ganache_branco_com_morango + resultado_ganache_ao_leite_com_praline + resultado_trufa_meio_amarga + resultado_frutas_vermelhas + resultado_trufa_de_coco + resultado_beijinho + resultado_leite_ninho + resultado_amendoim + resultado_bicho_de_pe_morango + resultado_casadinho + resultado_tradicional_com_amendoim + resultado_olho_de_sogra_ameixa + resultado_damasco + resultado_creme_brulee + resultado_tradicional + resultado_churros + resultado_tradicional_dourado + resultado_ninho_com_nutella
+        
         print(f'Total: R${valor_total:.2f}')
-
+        
 # resultados finais
     if resultado_limao > 0:
         print(f'{quantos_limao} - Limão: R${resultado_limao:.2f}')
