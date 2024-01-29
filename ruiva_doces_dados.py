@@ -47,3 +47,52 @@ menu =('- Doces Finos\n'
         'Creme de Ninho com Nutella G = R$70\n'
         '\n'
         )
+
+
+
+# Doces Finos
+# resultado_limao = 0
+# resultado_ninho_trufado_com_nutella = 0
+# resultado_geleia_de_morango = 0
+# resultado_maracuja = 0
+# resultado_pistache = 0
+# resultado_physalis = 0
+# resultado_brigadeiro_gourmet = 0
+# resultado_caramelo_salgado = 0
+# resultado_surpresa_de_uva = 0
+# resultado_cereja = 0
+# resultado_camafeu_de_nozes = 0
+# resultado_creme_brulee_com_nozes = 0
+# resultado_ganache_branco_com_morango = 0
+# resultado_ganache_ao_leite_com_praline = 0
+# resultado_trufa_meio_amarga = 0
+# resultado_frutas_vermelhas = 0
+# resultado_trufa_de_coco = 0
+# # Brigadeiros Gourmet
+# resultado_beijinho = 0
+# resultado_leite_ninho = 0
+# resultado_amendoim = 0
+# resultado_bicho_de_pe_morango = 0
+# resultado_casadinho = 0
+# resultado_tradicional_com_amendoim = 0
+# resultado_olho_de_sogra_ameixa = 0
+# resultado_damasco = 0
+# resultado_creme_brulee = 0
+# resultado_tradicional = 0
+# resultado_churros = 0
+# resultado_tradicional_dourado = 0
+# resultado_ninho_com_nutella = 0
+# # Mini Cupcakes
+# resultado_mini_cupcakes_chantininho_glitter = 0
+# resultado_mini_cupcakes_pasta_americana = 0
+# # Mini Brownie
+# resultado_mini_brownie = 0
+# # Pirulitos
+# resultado_pirulito_de_chocolate = 0
+# # Bolo Vulcão
+# resultado_bolo_vulcao_creme_de_ninho_pequeno = 0
+# resultado_bolo_vulcao_creme_de_ninho_com_morango_pequeno = 0
+# resultado_bolo_vulcao_creme_de_ninho_com_nutella_pequeno = 0
+# resultado_bolo_vulcao_creme_de_ninho_grande = 0
+# resultado_bolo_vulcao_creme_de_ninho_com_morango_grande = 0
+# resultado_bolo_vulcao_creme_de_ninho_com_nutella_grande = 0
