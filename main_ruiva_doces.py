@@ -1,20 +1,25 @@
 
 import os
 lista = []
-valor_total = 0
+valor_total2 = 0
+
 condicao = True
 while condicao: 
     print('')
+#perguntas para usuário - início
     print('Digite o tipo de doce sem acentos (ex.: limao)')
     tipo = input('- Digite o tipo de doce: ')
     tipo = tipo.lower()
 
     quantos = input('- Digite quantidade: ')
     print('')
+#perguntas para usuário - fim
     os.system('clear')
     try:
         quantos = int(quantos)
+        resultado = 0
 
+# -- tipos de doce com valores do cento -- início
     # Doces Finos
         limao = float(320)
         ninho_trufado_com_nutella = float(330)
@@ -61,6 +66,8 @@ while condicao:
         bolo_vulcao_creme_de_ninho_grande = float(55)
         bolo_vulcao_creme_de_ninho_com_morango_grande  = float(60)
         bolo_vulcao_creme_de_ninho_com_nutella_grande  = float(70)
+# -- tipos de doce com valores do cento -- fim
+        
     # Doces Finos
         if tipo == 'limao':
             print(f'{tipo} R${limao:.2f}')
@@ -346,18 +353,32 @@ while condicao:
             quantos_bolo_vulcao_creme_de_ninho_com_nutella_grande = quantos
             resultado = resultado_bolo_vulcao_creme_de_ninho_com_nutella_grande
         else:
-            print(f' {tipo} não encontrado, tente novamente.')
+            print(f'"{tipo}" não encontrado, tente novamente.')
+            print('')
+            print(f'Total: R${valor_total2:.2f}')
+            for item in lista:
+                    print(item)
+       
+# calculando o valor total - início
+        if resultado > 0:
+            try:  
+                valor_total2 = valor_total2 + resultado
+                print('')
+                print(f'Total: R${valor_total2:.2f}')
+            # lista final com pedidos
+                lista.append(f'{quantos} - {tipo}: R${resultado:.2f}')
+                for item in lista:
+                    print(item)
+# calculando o valor total - fim
+            except:
+                print('Ops! As quantidades precisam ser números inteiros, tente novamente, os números anteriores estão salvos.')
+        
     except:
         print('Ops! As quantidades precisam ser números inteiros, tente novamente, os números anteriores estão salvos.')
-        continue
-    print('')
-
-    valor_total = valor_total + resultado    
-    print(f'Total: R${valor_total:.2f}')
-    lista.append(f'{quantos} - {tipo}: R${resultado:.2f}')
-    for item in lista:
-        print(item)
-    
+        print('')
+        print(f'Total: R${valor_total2:.2f}')
+        for item in lista:
+                    print(item)
         
 
 
